@@ -4,8 +4,8 @@ def add_everything_up(a,b):
    x = round(w, 3)
    return x
 
-  except TypeError:
-   print('Произошла ошибка, сейчас мы ее исправим')
+  except TypeError as huh:
+   print(f'ОШИБКА "{huh}"! Переводим значения в строковые!')
    A = str(a)
    B = str(b)
    X = A + B
@@ -15,3 +15,4 @@ def add_everything_up(a,b):
 print(add_everything_up(123.456, 'строка'))
 print(add_everything_up('яблоко', 4215))
 print(add_everything_up(123.456, 7))
+
